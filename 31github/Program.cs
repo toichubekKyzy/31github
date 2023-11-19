@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("My first project");
+Console.ResetColor();
+Console.WriteLine("Here i will put into practice what i have learned.");
+Console.WriteLine("привет");
+Console.WriteLine("qwert");
