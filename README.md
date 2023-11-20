@@ -17,6 +17,7 @@
  - I'm currently learning **C#, .Net**
  - I became a mother at 20, and I never stop **growing**.
  - I am learning English, speak(Russian,Kyrgyz) languages.
+ - i like reading book
 
 **Languages and tools**
 <div>
