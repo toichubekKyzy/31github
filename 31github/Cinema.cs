@@ -15,11 +15,11 @@ private const int MovieShed = 2;
 
 public void ShowGreetings()
 {
-    Console.WriteLine("****************************");
-    Console.WriteLine("*                          *");
-    Console.WriteLine("*  Welcome to the cinema   *");
-    Console.WriteLine("*                          *");
-    Console.WriteLine("****************************");
+    Console.WriteLine("********************************");
+    Console.WriteLine("**********************************");
+    Console.WriteLine("*  Welcome to the cinema   *********");
+    Console.WriteLine("*************************************");
+    Console.WriteLine("***************************************");
     Thread.Sleep(3000);
     Console.Clear();
 }

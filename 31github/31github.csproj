@@ -9,7 +9,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\31github.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\31github.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\31github.deps.json" />
+    <Content Include="bin\Debug\net6.0\31github.runtimeconfig.json" />
+    <Content Include="obj\31github.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net6.0\31github.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="bin\Debug\net6.0\31github.dll" />
+    <None Include="bin\Debug\net6.0\31github.exe" />
+    <None Include="bin\Debug\net6.0\31github.pdb" />
+    <None Include="obj\31github.csproj.nuget.g.props" />
+    <None Include="obj\31github.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\31github.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\31github.assets.cache" />
+    <None Include="obj\Debug\net6.0\31github.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0\31github.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\31github.dll" />
+    <None Include="obj\Debug\net6.0\31github.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\31github.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\31github.pdb" />
+    <None Include="obj\Debug\net6.0\apphost.exe" />
+    <None Include="obj\Debug\net6.0\refint\31github.dll" />
+    <None Include="obj\Debug\net6.0\ref\31github.dll" />
+    <None Include="obj\project.nuget.cache" />
   </ItemGroup>
 
 </Project>
