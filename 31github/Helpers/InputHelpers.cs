@@ -1,11 +1,13 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace _31github.Helpers
 {
-
-    public static class InputHelper
+    internal class InputHelpers
     {
-        public static string ReadString(string inputMessage)
-        {
 
-        }
-   }
+    }
+}

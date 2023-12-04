@@ -10,10 +10,11 @@ namespace _31github;
 
 public class Cinema
 {
-private const int MovieChoice = 1;
-private const int MovieShed = 2;
+private const int MovieChoiceId = 1;
+private const int MovieShedId = 2;
+private int[] availableOperationIds = { MovieChoiceId, };
 
-public void ShowGreetings()
+    public void ShowGreetings()
 {
     Console.WriteLine("********************************");
     Console.WriteLine("**********************************");
@@ -27,12 +28,31 @@ public void ShowGreetings()
 public void ShowMenu()
 {
     Console.WriteLine("POSTER");
-    Console.WriteLine($"{MovieChoice} - Movie selection");
+    Console.WriteLine($"{MovieChoiceId} - Movie selection");
 
-    Console.WriteLine($"{MovieShed} - Shedule");
+    Console.WriteLine($"{MovieShedId} - Shedule");
     Console.WriteLine("Please choose necessary option");
-
-
+    int operationId = InputHelper.ReadNumber("Please choose necessary option");
+        ProcessOperation(operationId);
+    }
 }
-}
 
+
+private void ProcessOperation(int operationId)
+{
+    switch (operationId)
+    {
+        case ShowBalanceOperationId:
+            ShowBalance();
+            break;
+        case TopUpBalanceOperationId:
+            ChangeBalance(CardOperation.TopUp);
+            break;
+        case WithdrawFromBalanceOperationId:
+            ChangeBalance(CardOperation.Withdraw);
+            break;
+        default:
+            ProcessIncorrectOperationId();
+            break;
+    }
+}
