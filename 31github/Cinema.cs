@@ -32,11 +32,11 @@ public void ShowMenu()
 
     Console.WriteLine($"{MovieShedId} - Shedule");
     Console.WriteLine("Please choose necessary option");
-    int operationId = InputHelper.ReadNumber("Please choose necessary option");
+    int operationId = InputHelpers.ReadNumber("Please choose necessary option");
         ProcessOperation(operationId);
     }
 }
-
+ы
 
 private void ProcessOperation(int operationId)
 {
