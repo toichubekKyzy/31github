@@ -10,9 +10,8 @@ namespace _31github;
 
 public class Cinema
 {
-    private const int MovieChoiceId = 1;
-    private const int MovieShedId = 2;
-    private int[] availableOperationIds = { MovieChoiceId, };
+    private const int MovieChoice = 1;
+    private const int MovieShed = 2;
 
     public void ShowGreetings()
     {
@@ -28,9 +27,9 @@ public class Cinema
     public void ShowMenu()
     {
         Console.WriteLine("POSTER");
-        Console.WriteLine($"{MovieChoiceId} - Movie selection");
+        Console.WriteLine($"{MovieChoice} - Movie selection");
 
-        Console.WriteLine($"{MovieShedId} - Shedule");
+        Console.WriteLine($"{MovieShed} - Shedule");
         Console.WriteLine("Please choose necessary option");
 
     }
