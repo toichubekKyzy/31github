@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public struct User
 {
-    public string Username { get; }
-    public string Password { get; }
+    // Объявляем свойства Username и Password
+    public string Username { get; set; }
+    public string Password { get; set; }
 
-    public User (string username, string password)
+    // Конструктор структуры User принимает имя пользователя и пароль.
+    // Используется для инициализации свойств Username и Password
+    // при создании экземпляра User.
+    public User(string username, string password)
     {
         Username = username;
+
         Password = password;
     }
 }
