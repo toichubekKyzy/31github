@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+
+class TaskManager
+{
+    static void Main()
+    {
+        List<string> tasks = new List<string>();
+
+        while (true)
+        {
+            Console.WriteLine("Выберите действие:");
+            Console.WriteLine("1. Добавить задачу");
+            Console.WriteLine("2. Показать все задачи");
+            Console.WriteLine("3. Выход");
+
+            int choice;
+            if (!int.TryParse(Console.ReadLine(), out choice))
+            {
+                Console.WriteLine("Введите число от 1 до 3.");
+                continue;
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("Введите новую задачу:");
+                    string newTask = Console.ReadLine();
+                    tasks.Add(newTask);
+                    Console.WriteLine("Задача добавлена!");
+                    break;
+                case 2:
+                    if (tasks.Count > 0)
+                    {
+                        Console.WriteLine("Все задачи:");
+                        for (int i = 0; i < tasks.Count; i++)
+                        {
+                            Console.WriteLine($"{i + 1}. {tasks[i]}");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Нет задач.");
+                    }
+                    break;
+                case 3:
+                    Console.WriteLine("До свидания!");
+                    return;
+                default:
+                    Console.WriteLine("Выберите действие от 1 до 3.");
+                    break;
+            }
+        }
+    }
+}
