@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+class Employee
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Department { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Employee> employees = new List<Employee>();
+
+        employees.Add(new Employee { Name = "Иван", Age = 30, Department = "IT" });
+        employees.Add(new Employee { Name = "Елена", Age = 28, Department = "Маркетинг" });
+        employees.Add(new Employee { Name = "Петр", Age = 35, Department = "Финансы" });
+
+        foreach (var emp in employees)
+        {
+            Console.WriteLine($"Имя: {emp.Name}, Возраст: {emp.Age}, Отдел: {emp.Department}");
+        }
+    }
